@@ -1,0 +1,55 @@
+.banner {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: IM Fell French Canon;
+
+    h4 {
+        font-family: Libre Baskerville;
+
+    }
+
+    h2 {
+        color: #27a379;
+        font-size: 45px;
+    }
+
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: 80vh;
+    }
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+
+    img {
+        width: 25%;
+    }
+
+    h1{
+        font-family: Libre Baskerville;
+        color: #27a379;
+    }
+}
+
+.serv {
+    display: flex;
+    font-family: IM Fell French Canon;
+}
