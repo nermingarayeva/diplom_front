@@ -65,7 +65,7 @@ class Auth {
             
             setTimeout(() => {
                 messageDiv.style.display = 'none';
-            }, 3000);
+            }, 3001);
         }
     }
 }

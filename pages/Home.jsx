@@ -18,19 +18,19 @@ const Home = () => {
       <div className="services">
         <h1>Services</h1>
         <div className="serv">
-          <div>
+          <div className="card">
             <img src="\jpeg\finance-management_15165056.png" alt="" />
             <h4>Making Money</h4>
           </div>
-          <div>
+          <div className="card">
             <img src="\jpeg\wallet_18518877.png" alt="" />
             <h4>Saving Money</h4>
           </div>
-          <div>
+          <div className="card">
             <img src="\jpeg\budget_3526525.png" alt="" />
             <h4>Budgeting</h4>
           </div>
-          <div>
+          <div className="card">
             <img src="\jpeg\strategic-plan_10981732.png" alt="" />
             <h4>Financal Planning</h4>
           </div>

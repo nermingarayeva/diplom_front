@@ -1,6 +1,6 @@
 class API {
     constructor() {
-        this.baseURL = 'http://localhost:5002/api';
+        this.baseURL = 'http://localhost:3001/api';
         this.token = localStorage.getItem('token');
     }
 

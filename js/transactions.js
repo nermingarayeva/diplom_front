@@ -151,4 +151,6 @@ class Transactions {
         }
     }
 }
-export default Transactions
+
+// Global obyekt yaradırıq ki, HTML faylından istifadə edə bilək
+const transactions = new Transactions();
