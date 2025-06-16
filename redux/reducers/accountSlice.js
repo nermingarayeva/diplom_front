@@ -1,12 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// Axios interceptor - token-i avtomatik əlavə edir
 const api = axios.create({
   baseURL: "http://localhost:3001/api",
 });
 
-// Request interceptor - hər sorğuya token əlavə edir
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token') || 

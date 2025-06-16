@@ -222,7 +222,6 @@ const Accounts = () => {
     .filter(acc => acc.type === 'credit')
     .reduce((sum, acc) => sum + Math.abs(acc.balance), 0);
 
-  // Authentication olmadığı halda login formu göstər
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">

@@ -22,7 +22,6 @@ import styles from "../src/assets/App.module.scss";
 const App = () => {
   const dispatch = useDispatch();
 
-  // Fetch data from store
   const accounts = useSelector(selectAllAccounts);
   const transactions = useSelector(selectRecentTransactions);
   const budgets = useSelector(selectAllBudgets);

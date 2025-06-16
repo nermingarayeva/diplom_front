@@ -131,7 +131,6 @@ const Goals = () => {
       const data = await response.json();
       
       if (data.success) {
-        // Məqsədləri yenidən yüklə
         await loadGoals();
       } else {
         throw new Error(data.message || 'Məqsəd yenilənmədi');
