@@ -4,9 +4,9 @@ import Layout from "../components/Layout";
 import Accounts from "../pages/Accounts";
 import Home from "../pages/Home";
 import NotFound from "../components/NotFound";
-import Budgets from "../pages/Budgets";
 import Goals from "../pages/Goals";
 import Transactions from "../pages/Transactions";
+import News from "../pages/News";
 
 const Router = () => {
   return (
@@ -17,7 +17,7 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="/goals" element={<Goals />} />
           <Route path="/transactions" element={<Transactions/>} />
-          <Route path="/budgets" element={<Budgets />} />
+          <Route path="/news" element={<News />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -36,11 +36,38 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-        <a href="/about us">About</a>
+      <div className="basics">
+        <div>
+          <img src="/jpeg/basic.jpg" alt="" />
+        </div>
+        <div className="bas">
+          <a href="" className="a">
+            Financal Basics
+          </a>
+          <a href="" className="b">
+            Ready to take control of your money? Start by taking a deep breath.
+            We'll help you get started.
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="">other services</a>
+      <div className="b3">
+        <h2>The Fidelity perspective</h2>
+        <h4>
+          <img src="/jpeg/okay.png" alt="" />
+          <a href="">Budgeting:</a> Spend less than you earn and prepare for
+          emergency costs, like a medical expense or car repair.
+        </h4>
+        <h4>
+          <img src="/jpeg/okay.png" alt="" />
+          <a href="">Managing debt:</a> Eliminate high-interest debt, like
+          credit cards or private student loans.
+        </h4>
+        <h4>
+          <img src="/jpeg/okay.png" alt="" />
+          <a href="">Saving:</a> When saving for retirement, an early start can
+          make all the difference. Make the most of your contributions through
+          available employer match programs.
+        </h4>
       </div>
     </div>
   );

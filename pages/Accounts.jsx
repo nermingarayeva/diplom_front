@@ -14,7 +14,7 @@ import {
   logout,
   setAuthFromStorage
 } from "../redux/reducers/accountSlice";
-
+import "../css/Accounts.css"
 const Accounts = () => {
   const dispatch = useDispatch();
   const { accounts, loading, error, isAuthenticated, user } = useSelector(state => state.accounts);
@@ -71,9 +71,11 @@ const Accounts = () => {
       showMessage('Email və parol daxil edin', 'error');
       return;
     }
-
+  
     try {
       await dispatch(loginThunk(loginData)).unwrap();
+      localStorage.setItem('isAuthenticated', 'true'); // ✅ YENİ SƏTİR
+  
       setLoginData({ email: '', password: '' });
       setShowLoginForm(false);
       showMessage('Uğurla daxil oldunuz!', 'success');
@@ -81,12 +83,14 @@ const Accounts = () => {
       showMessage(`Giriş xətası: ${error}`, 'error');
     }
   };
+  
 
   const handleLogout = () => {
     dispatch(logout());
+    localStorage.removeItem('isAuthenticated'); 
     showMessage('Sistemdən çıxdınız', 'success');
   };
-
+  
   const handleSubmit = async () => {
     if (!formData.name.trim()) {
       showMessage('Hesab adı daxil edin', 'error');
@@ -224,10 +228,10 @@ const Accounts = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="max-w-md w-full space-y-8">
+      <div className="wrappper">
+        <div className="wrappper2">
           <div>
-            <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-blue-500">
+            <div className="wrappper3">
               <Lock className="h-6 w-6 text-white" />
             </div>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -266,11 +270,11 @@ const Accounts = () => {
                 </div>
               </div>
 
-              <div>
+              <div  className="mt-1">
                 <label className="block text-sm font-medium text-gray-700">
                   Parol
                 </label>
-                <div className="mt-1">
+                <div>
                   <input
                     type="password"
                     value={loginData.password}
